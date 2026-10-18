@@ -1,0 +1,14 @@
+# Data and analytics
+pandas>=2.2,<3
+numpy>=1.26
+Faker>=25.0            # synthetic demo statement
+
+# Language models (Ollama is called over HTTP with the standard library; no extra package)
+python-dotenv>=1.0
+
+# UI
+streamlit>=1.46
+plotly>=5.22
+
+# Tests
+pytest>=8.0

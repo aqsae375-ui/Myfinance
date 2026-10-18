@@ -1,0 +1,50 @@
+{
+  "section": "qa_after_fix",
+  "provider": "ollama:qwen2.5:7b",
+  "commit": "585fb35+dirty",
+  "run_at": "2026-10-11T05:42:21",
+  "summary": {
+    "questions": 1,
+    "answered": 1,
+    "refused": 0,
+    "fully_verified": 1,
+    "fully_verified_pct": 100.0,
+    "retried": 0,
+    "replaced_by_verifier": 0,
+    "unverified_numbers_shown_to_user": 1,
+    "correct": 1,
+    "correct_pct": 100.0,
+    "seconds_answered": {
+      "n": 1,
+      "median_s": 102.44,
+      "worst_s": 102.44,
+      "all_s": [
+        102.44
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "Q22",
+      "kind": "unanswerable",
+      "question": "How much did I spend in December 2025?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [
+        "2025"
+      ],
+      "tools": [],
+      "correct": true,
+      "seconds": 102.44,
+      "answer": "I can't compute that as the data for December 2025 is not available in the provided months. The earliest month with data is 2026-03.",
+      "model_answer": "I can't compute that as the data for December 2025 is not available in the provided months. The earliest month with data is 2026-03."
+    }
+  ],
+  "section_runtime_s": 105.4,
+  "subset": [
+    "Q22"
+  ]
+}

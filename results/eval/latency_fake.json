@@ -1,0 +1,83 @@
+{
+  "section": "latency",
+  "provider": "fake",
+  "commit": "585fb35",
+  "run_at": "2026-10-11T05:34:04",
+  "load_synthetic_fake": {
+    "n": 5,
+    "median_s": 0.098,
+    "worst_s": 0.13,
+    "all_s": [
+      0.13,
+      0.098,
+      0.095,
+      0.104,
+      0.086
+    ]
+  },
+  "load_pk_fixture_fake": {
+    "n": 5,
+    "median_s": 0.055,
+    "worst_s": 0.056,
+    "all_s": [
+      0.054,
+      0.056,
+      0.055,
+      0.055,
+      0.055
+    ]
+  },
+  "dashboard_render": {
+    "cold": {
+      "n": 1,
+      "median_s": 2.281,
+      "worst_s": 2.281,
+      "all_s": [
+        2.281
+      ]
+    },
+    "warm": {
+      "n": 5,
+      "median_s": 0.551,
+      "worst_s": 0.563,
+      "all_s": [
+        0.557,
+        0.519,
+        0.525,
+        0.563,
+        0.551
+      ]
+    },
+    "month_switch": {
+      "n": 5,
+      "median_s": 0.995,
+      "worst_s": 1.098,
+      "all_s": [
+        0.26,
+        0.671,
+        0.995,
+        1.095,
+        1.098
+      ]
+    },
+    "note": "Streamlit script run (AppTest), server side; browser paint not included"
+  },
+  "first_answer_fake": {
+    "n": 10,
+    "median_s": 0.039,
+    "worst_s": 0.045,
+    "all_s": [
+      0.039,
+      0.042,
+      0.034,
+      0.039,
+      0.045,
+      0.039,
+      0.043,
+      0.038,
+      0.038,
+      0.042
+    ]
+  },
+  "section_runtime_s": 11.1
+}

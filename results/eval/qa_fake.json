@@ -1,0 +1,473 @@
+{
+  "section": "qa",
+  "provider": "fake",
+  "commit": "585fb35",
+  "run_at": "2026-10-11T05:33:47",
+  "summary": {
+    "questions": 24,
+    "answered": 21,
+    "refused": 3,
+    "fully_verified": 21,
+    "fully_verified_pct": 100.0,
+    "retried": 0,
+    "replaced_by_verifier": 0,
+    "unverified_numbers_shown_to_user": 0,
+    "correct": 24,
+    "correct_pct": 100.0,
+    "seconds_answered": {
+      "n": 21,
+      "median_s": 0.03,
+      "worst_s": 0.06,
+      "all_s": [
+        0.02,
+        0.02,
+        0.02,
+        0.03,
+        0.01,
+        0.03,
+        0.03,
+        0.03,
+        0.05,
+        0.05,
+        0.04,
+        0.05,
+        0.02,
+        0.03,
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.06,
+        0.02,
+        0.01
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "kind": "category total",
+      "question": "How much did I spend on dining out in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 0.02,
+      "answer": "You spent Rs 1,535.37 on Dining Out in 2026-05 across 22 transactions (35.25% of that month's spending).",
+      "model_answer": "You spent Rs 1,535.37 on Dining Out in 2026-05 across 22 transactions (35.25% of that month's spending)."
+    },
+    {
+      "id": "Q02",
+      "kind": "category total",
+      "question": "How much did I spend on groceries in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 0.02,
+      "answer": "You spent Rs 596.10 on Groceries in 2026-07 across 8 transactions (17.56% of that month's spending).",
+      "model_answer": "You spent Rs 596.10 on Groceries in 2026-07 across 8 transactions (17.56% of that month's spending)."
+    },
+    {
+      "id": "Q03",
+      "kind": "category total",
+      "question": "What did I spend on transport in June 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 0.02,
+      "answer": "You spent Rs 147.34 on Transport in 2026-06 across 4 transactions (3.39% of that month's spending).",
+      "model_answer": "You spent Rs 147.34 on Transport in 2026-06 across 4 transactions (3.39% of that month's spending)."
+    },
+    {
+      "id": "Q04",
+      "kind": "category total",
+      "question": "How much went to utilities in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 0.03,
+      "answer": "You spent Rs 586.79 on Utilities in 2026-07 across 3 transactions (17.29% of that month's spending).",
+      "model_answer": "You spent Rs 586.79 on Utilities in 2026-07 across 3 transactions (17.29% of that month's spending)."
+    },
+    {
+      "id": "Q05",
+      "kind": "category total",
+      "question": "How much did I spend on subscriptions in August 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 0.01,
+      "answer": "You spent Rs 72.47 on Subscriptions in 2026-08 across 3 transactions (2.07% of that month's spending).",
+      "model_answer": "You spent Rs 72.47 on Subscriptions in 2026-08 across 3 transactions (2.07% of that month's spending)."
+    },
+    {
+      "id": "Q06",
+      "kind": "month total",
+      "question": "Give me a summary of August 2026.",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 0.03,
+      "answer": "In 2026-08 you spent Rs 3,507.77 and received Rs 4,898.73, so you saved Rs 1,390.96. Biggest categories: Rent Rs 1,650.00 (47.04%), Transfers Rs 776.17 (22.13%), Groceries Rs 476.81 (13.59%).",
+      "model_answer": "In 2026-08 you spent Rs 3,507.77 and received Rs 4,898.73, so you saved Rs 1,390.96. Biggest categories: Rent Rs 1,650.00 (47.04%), Transfers Rs 776.17 (22.13%), Groceries Rs 476.81 (13.59%)."
+    },
+    {
+      "id": "Q07",
+      "kind": "month total",
+      "question": "How much did I save in June 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 0.03,
+      "answer": "In 2026-06 you spent Rs 4,349.50 and received Rs 4,891.06, so you saved Rs 541.56. Biggest categories: Rent Rs 1,650.00 (37.94%), Shopping Rs 1,349.00 (31.02%), Groceries Rs 601.04 (13.82%).",
+      "model_answer": "In 2026-06 you spent Rs 4,349.50 and received Rs 4,891.06, so you saved Rs 541.56. Biggest categories: Rent Rs 1,650.00 (37.94%), Shopping Rs 1,349.00 (31.02%), Groceries Rs 601.04 (13.82%)."
+    },
+    {
+      "id": "Q08",
+      "kind": "month total",
+      "question": "What was my total income in April 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 0.03,
+      "answer": "In 2026-04 you spent Rs 3,127.15 and received Rs 4,867.12, so you saved Rs 1,739.97. Biggest categories: Rent Rs 1,650.00 (52.76%), Groceries Rs 669.42 (21.41%), Utilities Rs 192.99 (6.17%).",
+      "model_answer": "In 2026-04 you spent Rs 3,127.15 and received Rs 4,867.12, so you saved Rs 1,739.97. Biggest categories: Rent Rs 1,650.00 (52.76%), Groceries Rs 669.42 (21.41%), Utilities Rs 192.99 (6.17%)."
+    },
+    {
+      "id": "Q09",
+      "kind": "comparison",
+      "question": "Compare my spending in May 2026 and June 2026.",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "compare_periods"
+      ],
+      "correct": true,
+      "seconds": 0.05,
+      "answer": "In 2026-06 you spent Rs 4,349.50, down Rs 5.80 (0.13%) from Rs 4,355.30 in 2026-05. Net saved was Rs 541.56, up Rs 1.76 (0.33%). Biggest change: Shopping, up Rs 1,349.00 to Rs 1,349.00 from Rs 0.00.",
+      "model_answer": "In 2026-06 you spent Rs 4,349.50, down Rs 5.80 (0.13%) from Rs 4,355.30 in 2026-05. Net saved was Rs 541.56, up Rs 1.76 (0.33%). Biggest change: Shopping, up Rs 1,349.00 to Rs 1,349.00 from Rs 0.00."
+    },
+    {
+      "id": "Q10",
+      "kind": "comparison",
+      "question": "How did my spending in July 2026 compare with the month before?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": true,
+      "seconds": 0.05,
+      "answer": "In 2026-07 you spent Rs 3,394.13, down Rs 955.37 (21.97%) from Rs 4,349.50 in 2026-06. Net saved was Rs 1,507.64, up Rs 966.08 (178.39%). Biggest change: Shopping, down Rs 1,349.00 (100.0%) to Rs 0.00 from Rs 1,349.00.",
+      "model_answer": "In 2026-07 you spent Rs 3,394.13, down Rs 955.37 (21.97%) from Rs 4,349.50 in 2026-06. Net saved was Rs 1,507.64, up Rs 966.08 (178.39%). Biggest change: Shopping, down Rs 1,349.00 (100.0%) to Rs 0.00 from Rs 1,349.00."
+    },
+    {
+      "id": "Q11",
+      "kind": "follow-up",
+      "question": "And the month before that?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": true,
+      "seconds": 0.04,
+      "answer": "In 2026-06 you spent Rs 4,349.50, down Rs 5.80 (0.13%) from Rs 4,355.30 in 2026-05. Net saved was Rs 541.56, up Rs 1.76 (0.33%). Biggest change: Shopping, up Rs 1,349.00 to Rs 1,349.00 from Rs 0.00.",
+      "model_answer": "In 2026-06 you spent Rs 4,349.50, down Rs 5.80 (0.13%) from Rs 4,355.30 in 2026-05. Net saved was Rs 541.56, up Rs 1.76 (0.33%). Biggest change: Shopping, up Rs 1,349.00 to Rs 1,349.00 from Rs 0.00."
+    },
+    {
+      "id": "Q12",
+      "kind": "comparison",
+      "question": "Did my dining out spending go up or down from April 2026 to May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "compare_periods"
+      ],
+      "correct": true,
+      "seconds": 0.05,
+      "answer": "In 2026-05 you spent Rs 4,355.30, up Rs 1,228.15 (39.27%) from Rs 3,127.15 in 2026-04. Net saved was Rs 539.80, down Rs 1,200.17 (68.98%). Biggest change: Dining Out, up Rs 1,356.18 (756.84%) to Rs 1,535.37 from Rs 179.19.",
+      "model_answer": "In 2026-05 you spent Rs 4,355.30, up Rs 1,228.15 (39.27%) from Rs 3,127.15 in 2026-04. Net saved was Rs 539.80, down Rs 1,200.17 (68.98%). Biggest change: Dining Out, up Rs 1,356.18 (756.84%) to Rs 1,535.37 from Rs 179.19."
+    },
+    {
+      "id": "Q13",
+      "kind": "top merchants",
+      "question": "What were my biggest purchases in August 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "find_transactions"
+      ],
+      "correct": true,
+      "seconds": 0.02,
+      "answer": "Found 26 matching transactions (money out Rs 3,507.77, money in Rs 0.00). Showing 5:\n- 2026-08-01  RENT PAYMENT TO ACCT  (Rent)  Rs 1,650.00 out\n- 2026-08-22  INTL WIRE TO IBAN  (Transfers)  Rs 750.00 out\n- 2026-08-09  GREENLEAF GROCERY  (Groceries)  Rs 128.42 out\n- 2026-08-11  GREENLEAF GROCERY  (Groceries)  Rs 107.19 out\n- 2026-08-28  FRESHMART SUPERMARKET  (Groceries)  Rs 88.07 out",
+      "model_answer": "Found 26 matching transactions (money out Rs 3,507.77, money in Rs 0.00). Showing 5:\n- 2026-08-01  RENT PAYMENT TO ACCT  (Rent)  Rs 1,650.00 out\n- 2026-08-22  INTL WIRE TO IBAN  (Transfers)  Rs 750.00 out\n- 2026-08-09  GREENLEAF GROCERY  (Groceries)  Rs 128.42 out\n- 2026-08-11  GREENLEAF GROCERY  (Groceries)  Rs 107.19 out\n- 2026-08-28  FRESHMART SUPERMARKET  (Groceries)  Rs 88.07 out"
+    },
+    {
+      "id": "Q14",
+      "kind": "top merchants",
+      "question": "What were my biggest purchases in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "find_transactions"
+      ],
+      "correct": true,
+      "seconds": 0.03,
+      "answer": "Found 41 matching transactions (money out Rs 4,355.30, money in Rs 0.00). Showing 5:\n- 2026-05-01  RENT PAYMENT TO ACCT  (Rent)  Rs 1,650.00 out\n- 2026-05-13  VALUE FOODS  (Groceries)  Rs 139.59 out\n- 2026-05-17  FRESHMART SUPERMARKET  (Groceries)  Rs 136.96 out\n- 2026-05-06  TACO FIESTA  (Dining Out)  Rs 134.05 out\n- 2026-05-04  VALUE FOODS  (Groceries)  Rs 127.90 out",
+      "model_answer": "Found 41 matching transactions (money out Rs 4,355.30, money in Rs 0.00). Showing 5:\n- 2026-05-01  RENT PAYMENT TO ACCT  (Rent)  Rs 1,650.00 out\n- 2026-05-13  VALUE FOODS  (Groceries)  Rs 139.59 out\n- 2026-05-17  FRESHMART SUPERMARKET  (Groceries)  Rs 136.96 out\n- 2026-05-06  TACO FIESTA  (Dining Out)  Rs 134.05 out\n- 2026-05-04  VALUE FOODS  (Groceries)  Rs 127.90 out"
+    },
+    {
+      "id": "Q15",
+      "kind": "subscriptions",
+      "question": "Which subscriptions am I paying for?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_subscriptions"
+      ],
+      "correct": true,
+      "seconds": 0.04,
+      "answer": "You have 4 active subscriptions:\n- BRIGHTWAVE INTERNET: Rs 65.00/month (Rs 780.00/year)\n- FITPRO GYM MEMBERSHIP: Rs 44.99/month (Rs 539.88/year), possibly unused: no related activity for 134 days (last on 2026-04-16) but still charged\n- NETFLIX.COM: Rs 15.49/month (Rs 185.88/year)\n- SPOTIFY USA: Rs 11.99/month (Rs 143.88/year)",
+      "model_answer": "You have 4 active subscriptions:\n- BRIGHTWAVE INTERNET: Rs 65.00/month (Rs 780.00/year)\n- FITPRO GYM MEMBERSHIP: Rs 44.99/month (Rs 539.88/year), possibly unused: no related activity for 134 days (last on 2026-04-16) but still charged\n- NETFLIX.COM: Rs 15.49/month (Rs 185.88/year)\n- SPOTIFY USA: Rs 11.99/month (Rs 143.88/year)"
+    },
+    {
+      "id": "Q16",
+      "kind": "subscriptions",
+      "question": "Do I have any subscriptions I'm not using?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_subscriptions"
+      ],
+      "correct": true,
+      "seconds": 0.04,
+      "answer": "You have 4 active subscriptions:\n- BRIGHTWAVE INTERNET: Rs 65.00/month (Rs 780.00/year)\n- FITPRO GYM MEMBERSHIP: Rs 44.99/month (Rs 539.88/year), possibly unused: no related activity for 134 days (last on 2026-04-16) but still charged\n- NETFLIX.COM: Rs 15.49/month (Rs 185.88/year)\n- SPOTIFY USA: Rs 11.99/month (Rs 143.88/year)",
+      "model_answer": "You have 4 active subscriptions:\n- BRIGHTWAVE INTERNET: Rs 65.00/month (Rs 780.00/year)\n- FITPRO GYM MEMBERSHIP: Rs 44.99/month (Rs 539.88/year), possibly unused: no related activity for 134 days (last on 2026-04-16) but still charged\n- NETFLIX.COM: Rs 15.49/month (Rs 185.88/year)\n- SPOTIFY USA: Rs 11.99/month (Rs 143.88/year)"
+    },
+    {
+      "id": "Q17",
+      "kind": "why expensive",
+      "question": "Why was July 2026 so expensive?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": true,
+      "seconds": 0.04,
+      "answer": "In 2026-07 you spent Rs 3,394.13, down Rs 955.37 (21.97%) from Rs 4,349.50 in 2026-06. Net saved was Rs 1,507.64, up Rs 966.08 (178.39%). Biggest change: Shopping, down Rs 1,349.00 (100.0%) to Rs 0.00 from Rs 1,349.00.",
+      "model_answer": "In 2026-07 you spent Rs 3,394.13, down Rs 955.37 (21.97%) from Rs 4,349.50 in 2026-06. Net saved was Rs 1,507.64, up Rs 966.08 (178.39%). Biggest change: Shopping, down Rs 1,349.00 (100.0%) to Rs 0.00 from Rs 1,349.00."
+    },
+    {
+      "id": "Q18",
+      "kind": "why expensive",
+      "question": "Why did I spend so much in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": true,
+      "seconds": 0.04,
+      "answer": "In 2026-05 you spent Rs 4,355.30, up Rs 1,228.15 (39.27%) from Rs 3,127.15 in 2026-04. Net saved was Rs 539.80, down Rs 1,200.17 (68.98%). Biggest change: Dining Out, up Rs 1,356.18 (756.84%) to Rs 1,535.37 from Rs 179.19.",
+      "model_answer": "In 2026-05 you spent Rs 4,355.30, up Rs 1,228.15 (39.27%) from Rs 3,127.15 in 2026-04. Net saved was Rs 539.80, down Rs 1,200.17 (68.98%). Biggest change: Dining Out, up Rs 1,356.18 (756.84%) to Rs 1,535.37 from Rs 179.19."
+    },
+    {
+      "id": "Q19",
+      "kind": "why expensive",
+      "question": "Were there any unusual charges in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_anomalies"
+      ],
+      "correct": true,
+      "seconds": 0.06,
+      "answer": "I found 1 unusual charge in 2026-07:\n- 2026-07-08  CITY POWER & LIGHT  (Utilities)  Rs 486.20, 8.64x the usual Rs 56.30, Rs 429.90 above it",
+      "model_answer": "I found 1 unusual charge in 2026-07:\n- 2026-07-08  CITY POWER & LIGHT  (Utilities)  Rs 486.20, 8.64x the usual Rs 56.30, Rs 429.90 above it"
+    },
+    {
+      "id": "Q20",
+      "kind": "unanswerable",
+      "question": "Should I invest my savings in bitcoin?",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    },
+    {
+      "id": "Q21",
+      "kind": "unanswerable",
+      "question": "What is my credit score?",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    },
+    {
+      "id": "Q22",
+      "kind": "unanswerable",
+      "question": "How much did I spend in December 2025?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 0.02,
+      "answer": "I couldn't get that: no transactions for 2025-12.",
+      "model_answer": "I couldn't get that: no transactions for 2025-12."
+    },
+    {
+      "id": "Q23",
+      "kind": "unanswerable",
+      "question": "How much will I spend on groceries next year?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.01,
+      "answer": "I can answer questions about your spending, income, savings, categories, subscriptions and unusual charges. Could you rephrase that, for example with a month or a category?",
+      "model_answer": "I can answer questions about your spending, income, savings, categories, subscriptions and unusual charges. Could you rephrase that, for example with a month or a category?"
+    },
+    {
+      "id": "Q24",
+      "kind": "unanswerable",
+      "question": "Tell me a joke about money",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    }
+  ],
+  "section_runtime_s": 1.3
+}

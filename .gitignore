@@ -1,0 +1,44 @@
+# Secrets
+.env
+
+# Environments
+.venv/
+venv/
+
+# Data (real statements and local databases never get committed)
+data/raw/
+data/app/
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Generated evaluation output (regenerate with the scripts; only the summary and its cited files are committed)
+results/categorization*.json
+results/2d_eval_*
+results/rule_audit.txt
+results/eval/model_calls_*.jsonl
+
+# Editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Reference designs and scratch files
+docs/reference/
+*.dc.html
+programm 1.cpp
+
+# OS
+.DS_Store
+Thumbs.db

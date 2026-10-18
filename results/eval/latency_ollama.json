@@ -1,0 +1,35 @@
+{
+  "section": "latency",
+  "provider": "ollama:qwen2.5:7b",
+  "commit": "ae32f18+dirty",
+  "run_at": "2026-10-11T05:04:52",
+  "load_synthetic_ollama": {
+    "n": 1,
+    "median_s": 38.353,
+    "worst_s": 38.353,
+    "all_s": [
+      38.353
+    ]
+  },
+  "first_answer_ollama": {
+    "cold_model_load": {
+      "n": 1,
+      "median_s": 178.411,
+      "worst_s": 178.411,
+      "all_s": [
+        178.411
+      ]
+    },
+    "warm": {
+      "n": 3,
+      "median_s": 34.874,
+      "worst_s": 35.748,
+      "all_s": [
+        34.874,
+        35.748,
+        34.677
+      ]
+    }
+  },
+  "section_runtime_s": 323.4
+}

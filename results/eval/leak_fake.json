@@ -1,0 +1,43 @@
+{
+  "section": "leak",
+  "provider": "fake",
+  "commit": "585fb35",
+  "run_at": "2026-10-11T05:33:52",
+  "pk_fixture": {
+    "rows": 83,
+    "model_calls": 56,
+    "tool_results_scanned": 38,
+    "chars_scanned": 209800,
+    "pii_terms_checked": {
+      "STAN/ref code": 55,
+      "branch address": 4,
+      "person name": 4,
+      "person name (part)": 8
+    },
+    "leaks": 0,
+    "hits": [],
+    "positive_control_raw_hits": 112,
+    "positive_control_all_types_found": true,
+    "log": "results/eval/model_calls_pk_fixture.jsonl"
+  },
+  "synthetic": {
+    "rows": 192,
+    "model_calls": 40,
+    "tool_results_scanned": 20,
+    "chars_scanned": 191839,
+    "pii_terms_checked": {
+      "IBAN": 1,
+      "email": 3,
+      "person name": 6,
+      "person name (part)": 12,
+      "phone/account/ref number": 6,
+      "phone/account/ref number (digits)": 6
+    },
+    "leaks": 0,
+    "hits": [],
+    "positive_control_raw_hits": 116,
+    "positive_control_all_types_found": true,
+    "log": "results/eval/model_calls_synthetic.jsonl"
+  },
+  "section_runtime_s": 3.7
+}

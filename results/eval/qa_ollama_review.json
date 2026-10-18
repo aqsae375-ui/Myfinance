@@ -1,0 +1,30 @@
+{
+  "reviewer": "manual review of results/eval/qa_ollama.json (final answers as shown to the user)",
+  "rubric": "correct = answers the question with true statements; wrong = wrong figure, wrong tool/period, missing the asked figure, or a false claim",
+  "grades": {
+    "Q01": ["correct", ""],
+    "Q02": ["correct", ""],
+    "Q03": ["correct", ""],
+    "Q04": ["correct", ""],
+    "Q05": ["wrong", "Model summed the subscriptions into Rs 276.96 (not a tool figure); the verifier replaced it with the subscription list, which does not give August's Subscriptions total (Rs 72.47)."],
+    "Q06": ["correct", ""],
+    "Q07": ["correct", ""],
+    "Q08": ["correct", ""],
+    "Q09": ["correct", "States the change (down Rs 5.80) rather than both totals; true."],
+    "Q10": ["correct", "States the change (down Rs 955.37) rather than July's total; true."],
+    "Q11": ["wrong", "Follow-up resolved to May vs April instead of June vs May. The model's draft also said May was DOWN (it was up); the verifier replaced it because of an unverified number, not because of the direction."],
+    "Q12": ["correct", "Up Rs 1,356.18 (756.84%): true. The automatic check expected May's total."],
+    "Q13": ["wrong", "Called get_category_spending: answered 'biggest purchases' with the Dining Out total."],
+    "Q14": ["wrong", "Same tool choice error as Q13."],
+    "Q15": ["correct", ""],
+    "Q16": ["correct", "Names FITPRO as possibly unused; no amount stated."],
+    "Q17": ["wrong", "False claim with verified numbers: attributes June's Rs 1,349.00 shopping charge to July, and July's spending actually fell vs June. The number verifier cannot catch this."],
+    "Q18": ["correct", "Dining Out up Rs 1,356.18 vs April: true and the main driver."],
+    "Q19": ["correct", "Power bill on 2026-07-08, 8.64x baseline, Rs 429.90 above it: true."],
+    "Q20": ["correct", "Refused"],
+    "Q21": ["correct", "Refused"],
+    "Q22": ["wrong", "The model's draft was honest (no data for December 2025) but the verifier rejected the year 2025 (not in any tool result) and the fallback showed August's figures. Fixed in Stage 7: years/months typed in the question are allowed; see qa_after_fix_ollama.json."],
+    "Q23": ["correct", "Said it can't compute next year's spending."],
+    "Q24": ["correct", "Refused"]
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "section": "qa",
+  "provider": "ollama:qwen2.5:7b",
+  "commit": "ae32f18+dirty",
+  "run_at": "2026-10-11T05:29:24",
+  "summary": {
+    "questions": 24,
+    "answered": 21,
+    "refused": 3,
+    "fully_verified": 18,
+    "fully_verified_pct": 85.7,
+    "retried": 2,
+    "replaced_by_verifier": 3,
+    "unverified_numbers_shown_to_user": 0,
+    "correct": 12,
+    "correct_pct": 50.0,
+    "seconds_answered": {
+      "n": 21,
+      "median_s": 72.04,
+      "worst_s": 162.55,
+      "all_s": [
+        38.38,
+        31.01,
+        35.08,
+        30.68,
+        71.21,
+        84.31,
+        77.96,
+        74.06,
+        104.22,
+        121.17,
+        162.55,
+        82.89,
+        37.76,
+        38.19,
+        72.04,
+        71.34,
+        101.05,
+        99.04,
+        48.85,
+        76.63,
+        10.45
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "kind": "category total",
+      "question": "How much did I spend on dining out in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 38.38,
+      "answer": "You spent Rs 1,535.37 on dining out in May 2026, which was 35.25% of your total spending that month.",
+      "model_answer": "You spent Rs 1,535.37 on dining out in May 2026, which was 35.25% of your total spending that month."
+    },
+    {
+      "id": "Q02",
+      "kind": "category total",
+      "question": "How much did I spend on groceries in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 31.01,
+      "answer": "You spent Rs 596.10 on groceries in July 2026.",
+      "model_answer": "You spent Rs 596.10 on groceries in July 2026."
+    },
+    {
+      "id": "Q03",
+      "kind": "category total",
+      "question": "What did I spend on transport in June 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 35.08,
+      "answer": "In June 2026, you spent Rs 147.34 on transport, which was 3.39% of your total spending that month.",
+      "model_answer": "In June 2026, you spent Rs 147.34 on transport, which was 3.39% of your total spending that month."
+    },
+    {
+      "id": "Q04",
+      "kind": "category total",
+      "question": "How much went to utilities in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": true,
+      "seconds": 30.68,
+      "answer": "Rs 586.79 went to utilities in July 2026.",
+      "model_answer": "Rs 586.79 went to utilities in July 2026."
+    },
+    {
+      "id": "Q05",
+      "kind": "category total",
+      "question": "How much did I spend on subscriptions in August 2026?",
+      "refused": false,
+      "number_check": "failed",
+      "retried": false,
+      "replaced_by_verifier": true,
+      "unverified_in_model_draft": [
+        "276.96"
+      ],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_subscriptions"
+      ],
+      "correct": false,
+      "seconds": 71.21,
+      "answer": "You have 4 active subscriptions:\n- BRIGHTWAVE INTERNET: Rs 65.00/month (Rs 780.00/year)\n- FITPRO GYM MEMBERSHIP: Rs 44.99/month (Rs 539.88/year), possibly unused: no related activity for 134 days (last on 2026-04-16) but still charged\n- NETFLIX.COM: Rs 15.49/month (Rs 185.88/year)\n- SPOTIFY USA: Rs 11.99/month (Rs 143.88/year)",
+      "model_answer": "In August 2026, you spent Rs 276.96 on subscriptions, which includes Rs 65.00 for Brightwave Internet, Rs 44.99 for Fitpro Gym Membership, Rs 15.49 for Netflix, and Rs 11.99 for Spotify."
+    },
+    {
+      "id": "Q06",
+      "kind": "month total",
+      "question": "Give me a summary of August 2026.",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 84.31,
+      "answer": "In August 2026, you spent Rs 3,507.77, received Rs 4,898.73 in income, and saved Rs 1,390.96. Rent accounted for the largest portion of your spending at Rs 1,650.00, followed by transfers (Rs 776.17) and groceries (Rs 476.81).",
+      "model_answer": "In August 2026, you spent Rs 3,507.77, received Rs 4,898.73 in income, and saved Rs 1,390.96. Rent accounted for the largest portion of your spending at Rs 1,650.00, followed by transfers (Rs 776.17) and groceries (Rs 476.81)."
+    },
+    {
+      "id": "Q07",
+      "kind": "month total",
+      "question": "How much did I save in June 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 77.96,
+      "answer": "In June 2026, you saved Rs 541.56.",
+      "model_answer": "In June 2026, you saved Rs 541.56."
+    },
+    {
+      "id": "Q08",
+      "kind": "month total",
+      "question": "What was my total income in April 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": true,
+      "seconds": 74.06,
+      "answer": "Your total income in April 2026 was Rs 4,867.12.",
+      "model_answer": "Your total income in April 2026 was Rs 4,867.12."
+    },
+    {
+      "id": "Q09",
+      "kind": "comparison",
+      "question": "Compare my spending in May 2026 and June 2026.",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 104.22,
+      "answer": "Your spending in June 2026 was down slightly compared to May 2026. Total spending decreased by Rs 5.80, income by Rs 4.04, and net savings increased by Rs 1.76. Notably, you spent more on transport and transfers, but significantly less on dining out and groceries.",
+      "model_answer": "Your spending in June 2026 was down slightly compared to May 2026. Total spending decreased by Rs 5.80, income by Rs 4.04, and net savings increased by Rs 1.76. Notably, you spent more on transport and transfers, but significantly less on dining out and groceries."
+    },
+    {
+      "id": "Q10",
+      "kind": "comparison",
+      "question": "How did my spending in July 2026 compare with the month before?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 121.17,
+      "answer": "Your spending in July 2026 was down by Rs 955.37 or 21.97% compared to June 2026. You saved more by Rs 966.08 or 178.39%, mainly due to reduced spending on groceries, dining out, and shopping. Utility costs increased significantly by Rs 412.23 or 236.15%, and there was a new bank fee of Rs 35.0.",
+      "model_answer": "Your spending in July 2026 was down by Rs 955.37 or 21.97% compared to June 2026. You saved more by Rs 966.08 or 178.39%, mainly due to reduced spending on groceries, dining out, and shopping. Utility costs increased significantly by Rs 412.23 or 236.15%, and there was a new bank fee of Rs 35.0."
+    },
+    {
+      "id": "Q11",
+      "kind": "follow-up",
+      "question": "And the month before that?",
+      "refused": false,
+      "number_check": "failed",
+      "retried": true,
+      "replaced_by_verifier": true,
+      "unverified_in_model_draft": [
+        "1,559.17",
+        "89.22"
+      ],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 162.55,
+      "answer": "In 2026-05 you spent Rs 4,355.30, up Rs 1,228.15 (39.27%) from Rs 3,127.15 in 2026-04. Net saved was Rs 539.80, down Rs 1,200.17 (68.98%). Biggest change: Dining Out, up Rs 1,356.18 (756.84%) to Rs 1,535.37 from Rs 179.19.",
+      "model_answer": "Your spending in May 2026 was down by Rs 1,228.15 or 39.27% compared to April 2026. You saved more by Rs 1,559.17 or 89.22%, mainly due to reduced spending on shopping and groceries. Dining out increased significantly by Rs 1,356.18 or 756.84%, and utility costs decreased by Rs 15.26 or 7.91%."
+    },
+    {
+      "id": "Q12",
+      "kind": "comparison",
+      "question": "Did my dining out spending go up or down from April 2026 to May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 82.89,
+      "answer": "Your dining out spending went up from April 2026 to May 2026, increasing by Rs 1,356.18 or 756.84%.",
+      "model_answer": "Your dining out spending went up from April 2026 to May 2026, increasing by Rs 1,356.18 or 756.84%."
+    },
+    {
+      "id": "Q13",
+      "kind": "top merchants",
+      "question": "What were my biggest purchases in August 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": false,
+      "seconds": 37.76,
+      "answer": "Your biggest purchases in August 2026 were dining out expenses totaling Rs 224.39, which was 6.4% of your total spending that month.",
+      "model_answer": "Your biggest purchases in August 2026 were dining out expenses totaling Rs 224.39, which was 6.4% of your total spending that month."
+    },
+    {
+      "id": "Q14",
+      "kind": "top merchants",
+      "question": "What were my biggest purchases in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_category_spending"
+      ],
+      "correct": false,
+      "seconds": 38.19,
+      "answer": "In May 2026, your biggest purchases were dining out expenses totaling Rs 1,535.37, which made up 35.25% of your total spending that month.",
+      "model_answer": "In May 2026, your biggest purchases were dining out expenses totaling Rs 1,535.37, which made up 35.25% of your total spending that month."
+    },
+    {
+      "id": "Q15",
+      "kind": "subscriptions",
+      "question": "Which subscriptions am I paying for?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_subscriptions"
+      ],
+      "correct": true,
+      "seconds": 72.04,
+      "answer": "You are paying for four subscriptions: Brightwave Internet for utilities at Rs 65.00 monthly, Fitpro Gym Membership for Rs 44.99, Netflix for Rs 15.49, and Spotify for Rs 11.99. Fitpro Gym Membership is marked as possibly unused.",
+      "model_answer": "You are paying for four subscriptions: Brightwave Internet for utilities at Rs 65.00 monthly, Fitpro Gym Membership for Rs 44.99, Netflix for Rs 15.49, and Spotify for Rs 11.99. Fitpro Gym Membership is marked as possibly unused."
+    },
+    {
+      "id": "Q16",
+      "kind": "subscriptions",
+      "question": "Do I have any subscriptions I'm not using?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_subscriptions"
+      ],
+      "correct": false,
+      "seconds": 71.34,
+      "answer": "You have four subscriptions. The \"Fitpro Gym Membership\" has not been used in over four months, so it might be unused. The other subscriptions from Brightwave Internet, Netflix, and Spotify have been active recently.",
+      "model_answer": "You have four subscriptions. The \"Fitpro Gym Membership\" has not been used in over four months, so it might be unused. The other subscriptions from Brightwave Internet, Netflix, and Spotify have been active recently."
+    },
+    {
+      "id": "Q17",
+      "kind": "why expensive",
+      "question": "Why was July 2026 so expensive?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 101.05,
+      "answer": "July 2026 was more expensive due to a significant increase in utility costs by 236.15%, and a large one-time shopping expense of Rs 1,349.00, which didn't occur in June 2026.",
+      "model_answer": "July 2026 was more expensive due to a significant increase in utility costs by 236.15%, and a large one-time shopping expense of Rs 1,349.00, which didn't occur in June 2026."
+    },
+    {
+      "id": "Q18",
+      "kind": "why expensive",
+      "question": "Why did I spend so much in May 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_month_over_month"
+      ],
+      "correct": false,
+      "seconds": 99.04,
+      "answer": "In May 2026, you spent significantly more on \"Dining Out\" compared to April, with an increase of Rs 1,356.18, which is a 756.84% rise. This is the main driver of your higher spending in May.",
+      "model_answer": "In May 2026, you spent significantly more on \"Dining Out\" compared to April, with an increase of Rs 1,356.18, which is a 756.84% rise. This is the main driver of your higher spending in May."
+    },
+    {
+      "id": "Q19",
+      "kind": "why expensive",
+      "question": "Were there any unusual charges in July 2026?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_anomalies"
+      ],
+      "correct": false,
+      "seconds": 48.85,
+      "answer": "Yes, there were unusual charges in July 2026. There was a significant spike in Utilities spending by 8.64 times the baseline amount, with an excess of Rs 429.90 on 2026-07-08 from \"CITY POWER & LIGHT\".",
+      "model_answer": "Yes, there were unusual charges in July 2026. There was a significant spike in Utilities spending by 8.64 times the baseline amount, with an excess of Rs 429.90 on 2026-07-08 from \"CITY POWER & LIGHT\"."
+    },
+    {
+      "id": "Q20",
+      "kind": "unanswerable",
+      "question": "Should I invest my savings in bitcoin?",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    },
+    {
+      "id": "Q21",
+      "kind": "unanswerable",
+      "question": "What is my credit score?",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    },
+    {
+      "id": "Q22",
+      "kind": "unanswerable",
+      "question": "How much did I spend in December 2025?",
+      "refused": false,
+      "number_check": "failed",
+      "retried": true,
+      "replaced_by_verifier": true,
+      "unverified_in_model_draft": [
+        "2025"
+      ],
+      "unverified_shown_to_user": [],
+      "tools": [
+        "get_monthly_summary"
+      ],
+      "correct": false,
+      "seconds": 76.63,
+      "answer": "In 2026-08 you spent Rs 3,507.77 and received Rs 4,898.73, so you saved Rs 1,390.96. Biggest categories: Rent Rs 1,650.00 (47.04%), Transfers Rs 776.17 (22.13%), Groceries Rs 476.81 (13.59%).",
+      "model_answer": "In August 2026, you spent Rs 3,507.77. However, you asked about December 2025, for which we don't have data."
+    },
+    {
+      "id": "Q23",
+      "kind": "unanswerable",
+      "question": "How much will I spend on groceries next year?",
+      "refused": false,
+      "number_check": "passed",
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 10.45,
+      "answer": "I can't compute next year's expenses as the data is only available up to 2026-08.",
+      "model_answer": "I can't compute next year's expenses as the data is only available up to 2026-08."
+    },
+    {
+      "id": "Q24",
+      "kind": "unanswerable",
+      "question": "Tell me a joke about money",
+      "refused": true,
+      "number_check": null,
+      "retried": false,
+      "replaced_by_verifier": false,
+      "unverified_in_model_draft": [],
+      "unverified_shown_to_user": [],
+      "tools": [],
+      "correct": true,
+      "seconds": 0.0,
+      "answer": "Sorry, I can only help with questions about your own transactions in this statement: spending, income, savings, categories, subscriptions and unusual charges. I can't help with that one.",
+      "model_answer": null
+    }
+  ],
+  "section_runtime_s": 1472.3
+}
